@@ -133,3 +133,30 @@ body {
   background-color: #282c34;
   color: #fff;
 }
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.banner i {
+  margin-right: 10px;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}

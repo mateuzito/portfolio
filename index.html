@@ -98,6 +98,18 @@
             rows="4"
             required
           ></textarea>
+
+          <input
+            type="hidden"
+            name="_next"
+            value="https://mateussilva.vercel.app/?success=true"
+          />
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="Recebi sua mensagem e retornarei em breve!"
+          />
+
           <button type="submit">Enviar</button>
         </form>
 
@@ -127,5 +139,11 @@
     <footer class="footer">
       <p>Mateus Silva - Todos os direitos reservados</p>
     </footer>
+
+    <div class="banner hidden" id="successBanner">
+      <i class="bx bx-check"></i> Formulário enviado com sucesso!
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
