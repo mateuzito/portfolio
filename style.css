@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
+/* Reset default styles for all elements */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Base body styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -14,6 +14,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Header container styling */
 .header {
   display: flex;
   justify-content: space-between;
@@ -23,7 +24,8 @@ body {
   color: #fff;
 }
 
-.barra-de-navegacao a {
+/* Navigation links styling */
+.navigation-bar a {
   font-size: 20px;
   color: #fff;
   text-decoration: none;
@@ -31,30 +33,36 @@ body {
   transition: 0.5s;
 }
 
-.barra-de-navegacao a:hover {
+/* Navigation links hover effect */
+.navigation-bar a:hover {
   color: #0066cc;
 }
 
+/* Section container styling */
 .section {
   padding: 50px 20px;
   text-align: center;
 }
 
+/* Section heading styling */
 .section h1 {
   font-size: 45px;
 }
 
-#inicio.section p {
+/* Home section paragraph styling */
+#home.section p {
   font-size: 20px;
 }
 
-.sobre-content {
+/* About content container */
+.content-about {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.foto {
+/* Profile photo styling */
+.photo {
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -62,40 +70,52 @@ body {
   border: 1px solid #031944;
 }
 
-.projetos-grid {
+/* Projects grid layout */
+.grid-projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
-.projeto {
+/* Individual project card styling */
+.project {
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 8px;
 }
 
-.projeto img {
+/* Project image styling */
+.project img {
   max-width: 100%;
   border-radius: 8px;
 }
 
-.projeto a {
+/* Project link styling */
+.project a {
   display: inline-block;
   margin-top: 10px;
   text-decoration: none;
   color: #0066cc;
   font-weight: bold;
+  transition: 0.5s;
 }
 
-.formulario {
+/* Project links hover effect */
+.project a:hover {
+  color: #004c99;
+}
+
+/* Contact form container */
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
 }
 
-.formulario input,
-.formulario textarea {
+/* Form input fields styling */
+.form input,
+.form textarea {
   width: 100%;
   max-width: 400px;
   padding: 10px;
@@ -103,30 +123,47 @@ body {
   border-radius: 5px;
 }
 
-.formulario button {
+/* Form submit button styling */
+.form button {
   padding: 10px 20px;
   background-color: #0066cc;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.redes-sociais {
+/* Form button hover effect */
+.form button:hover {
+  background-color: #3388ff;
+}
+
+/* Social media links container */
+.social-media {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 10%;
 }
 
-.redes-sociais a {
+/* Social media link styling */
+.social-media a {
   font-size: 35px;
   margin: 0 10px;
   text-decoration: none;
   color: #0066cc;
   font-weight: bold;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
+/* Social media link hover effect */
+.social-media a:hover {
+  color: #3388ff;
+  transform: rotate(10deg);
+}
+
+/* Footer section styling */
 .footer {
   text-align: center;
   padding: 20px;
@@ -134,6 +171,7 @@ body {
   color: #fff;
 }
 
+/* Banner notification styling */
 .banner {
   display: flex;
   align-items: center;
@@ -152,10 +190,12 @@ body {
   transition: opacity 0.5s ease-out;
 }
 
+/* Banner icon styling */
 .banner i {
   margin-right: 10px;
 }
 
+/* Hidden element state */
 .hidden {
   opacity: 0;
   pointer-events: none;

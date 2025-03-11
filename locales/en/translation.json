@@ -1,0 +1,55 @@
+{
+  "page": {
+    "title": "Mateus Silva | Portfolio"
+  },
+  "nav": {
+    "start": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "introduction": {
+    "first": "Hello, I'm Mateus",
+    "second": "Web Developer"
+  },
+  "about": {
+    "aboutMe": "About Me",
+    "description": "I am a web developer passionate about creating creative and functional solutions. I have experience in building responsive websites and applications, always focusing on the best user experience.",
+    "photoAlt": "Photo of Mateus Silva"
+  },
+  "projects": {
+    "title": "Projects",
+    "teuzinPhotography": {
+      "description": "Teuzin Photography | A photography website where I can post my photos",
+      "link": "View Project",
+      "imageAlt": "Teuzin Photography project screenshot"
+    },
+    "qrCodeGenerator": {
+      "description": "QR Code Generator | Generates QR codes and allows downloading",
+      "link": "View Project",
+      "imageAlt": "QR Code Generator project screenshot"
+    },
+    "devlinks": {
+      "description": "DevLinks | Provides links for developers",
+      "link": "View Project",
+      "imageAlt": "DevLinks project screenshot"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "form": {
+      "namePlaceholder": "Name",
+      "emailPlaceholder": "Email",
+      "messagePlaceholder": "Message",
+      "submit": "Send",
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "messageRequired": "Message is required",
+      "autoResponse": "I received your message and will get back to you soon!"
+    },
+    "success": "Form submitted successfully!"
+  },
+  "footer": {
+    "rights": "Mateus Silva - All rights reserved"
+  }
+}

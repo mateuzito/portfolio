@@ -1,0 +1,55 @@
+{
+  "page": {
+    "title": "Mateus Silva | Portfólio"
+  },
+  "nav": {
+    "start": "Início",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "introduction": {
+    "first": "Olá, sou Mateus",
+    "second": "Desenvolvedor Web"
+  },
+  "about": {
+    "aboutMe": "Sobre Mim",
+    "description": "Sou um desenvolvedor web apaixonado por criar soluções criativas e funcionais. Tenho experiência em projetos de sites e aplicações responsivas, focando sempre na melhor experiência do usuário.",
+    "photoAlt": "Foto de Mateus Silva"
+  },
+  "projects": {
+    "title": "Projetos",
+    "teuzinPhotography": {
+      "description": "Teuzin Fotografia | Site de fotografia onde eu possa postar minhas fotos",
+      "link": "Ver Projeto",
+      "imageAlt": "Captura de tela do projeto Teuzin Fotografia"
+    },
+    "qrCodeGenerator": {
+      "description": "Gerador de QR Code | Gera QR Code e permite baixar",
+      "link": "Ver Projeto",
+      "imageAlt": "Captura de tela do projeto Gerador de QR Code"
+    },
+    "devlinks": {
+      "description": "DevLinks | Disponibiliza links para desenvolvedores",
+      "link": "Ver Projeto",
+      "imageAlt": "Captura de tela do projeto DevLinks"
+    }
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "form": {
+      "namePlaceholder": "Nome",
+      "emailPlaceholder": "E-mail",
+      "messagePlaceholder": "Assunto",
+      "submit": "Enviar",
+      "nameRequired": "Nome é obrigatório",
+      "emailRequired": "E-mail é obrigatório",
+      "messageRequired": "Mensagem é obrigatória",
+      "autoResponse": "Recebi sua mensagem e retornarei em breve!"
+    },
+    "success": "Formulário enviado com sucesso!"
+  },
+  "footer": {
+    "rights": "Mateus Silva - Todos os direitos reservados"
+  }
+}

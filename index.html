@@ -1,104 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mateus Silva | Portfólio</title>
+    <title data-i18n="page.title">Mateus Silva | Portfolio</title>
+
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/images/mateus-icon.jpg" type="image/x-icon" />
+
+    <!-- I18next icons and library for multilingual support -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="icon" href="imagens/1702058419891.png" type="image/x-icon" />
+    <script src="https://unpkg.com/i18next@23.11.5/dist/umd/i18next.min.js"></script>
   </head>
   <body>
+    <!-- Header with navigation -->
     <header class="header">
       <h1>Mateus Silva</h1>
-      <nav class="barra-de-navegacao">
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
+      <nav class="navigation-bar">
+        <a href="#home" data-i18n="nav.start">Home</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
     </header>
 
+    <!-- Main content container -->
     <main>
-      <section id="inicio" class="section">
-        <h1>Olá, sou Mateus</h1>
-        <p>Desenvolvedor Web</p>
+      <!-- Home section with introduction -->
+      <section id="home" class="section">
+        <h1 data-i18n="introduction.first">Hello, I'm Mateus</h1>
+        <p data-i18n="introduction.second">Web Developer</p>
       </section>
 
-      <section id="sobre" class="section">
-        <h2>Sobre Mim</h2>
-        <div class="sobre-content">
+      <!-- About section with personal info -->
+      <section id="about" class="section">
+        <h2 data-i18n="about.aboutMe">About Me</h2>
+        <div class="content-about">
           <img
-            src="imagens/PSX_20230715_182829.jpg"
-            alt="Foto de Mateus Silva"
-            class="foto"
+            src="assets/images/mateus-photo.jpg"
+            data-i18n="[alt]about.photoAlt"
+            alt="Photo of Mateus Silva"
+            class="photo"
+            oncontextmenu="return false"
           />
-          <p>
-            Sou um desenvolvedor web apaixonado por criar soluções criativas e
-            funcionais. Tenho experiência em projetos de sites e aplicações
-            responsivas, focando sempre na melhor experiência do usuário.
+          <p data-i18n="about.description">
+            I am a web developer passionate about creating creative and
+            functional solutions. I have experience in building responsive
+            websites and applications, always focusing on the best user
+            experience.
           </p>
         </div>
       </section>
 
-      <section id="projetos" class="section">
-        <h2>Projetos</h2>
-        <div class="projetos-grid">
-          <div class="projeto">
-            <img src="imagens/20241213_154009.jpg" alt="Projeto 1" />
-            <p>
-              Teuzin Fotografia | Site de fotografia onde eu possa postar minhas
-              fotos
+      <!-- Projects section showcasing portfolio -->
+      <section id="projects" class="section">
+        <h2 data-i18n="projects.title">Projects</h2>
+        <div class="grid-projects">
+          <div class="project">
+            <img
+              src="assets/images/teuzin-photography.jpg"
+              data-i18n="[alt]projects.teuzinPhotography.imageAlt"
+              alt="Teuzin Photography project screenshot"
+            />
+            <p data-i18n="projects.teuzinPhotography.description">
+              Teuzin Photography | A photography website where I can post my
+              photos
             </p>
             <a
               href="https://teuzinfotografia.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
-              >Ver Projeto</a
+              data-i18n="projects.teuzinPhotography.link"
+              >View Project</a
             >
           </div>
-          <div class="projeto">
-            <img src="imagens/20241213_154126.jpg" alt="Projeto 2" />
-            <p>Gerador de QR Code | Gera QR Code e permite baixar</p>
+          <div class="project">
+            <img
+              src="assets/images/qr-code-generator.jpg"
+              data-i18n="[alt]projects.qrCodeGenerator.imageAlt"
+              alt="QR Code Generator project screenshot"
+            />
+            <p data-i18n="projects.qrCodeGenerator.description">
+              QR Code Generator | Generates QR Codes and allows downloading
+            </p>
             <a
               href="https://geradordecodeqr.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
-              >Ver Projeto</a
+              data-i18n="projects.qrCodeGenerator.link"
+              >View Project</a
             >
           </div>
-          <div class="projeto">
-            <img src="imagens/20241213_154545.jpg" alt="Projeto 3" />
-            <p>DevLinks | Disponibiliza links para desenvolvedores</p>
+          <div class="project">
+            <img
+              src="assets/images/devlinks.jpg"
+              data-i18n="[alt]projects.devlinks.imageAlt"
+              alt="Dev Links project screenshot"
+            />
+            <p data-i18n="projects.devlinks.description">
+              DevLinks | Provides links for developers
+            </p>
             <a
               href="https://linksdodesenvolvedor.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
-              >Ver Projeto</a
+              data-i18n="projects.devlinks.link"
+              >View Project</a
             >
           </div>
         </div>
       </section>
 
-      <section id="contato" class="section">
-        <h2>Entre em Contato</h2>
+      <!-- Contact section with form and social links -->
+      <section id="contact" class="section">
+        <h2 data-i18n="contact.title">Get in Touch</h2>
         <form
-          class="formulario"
+          class="form"
           action="https://formsubmit.co/5edb6bbf8ca8cc9695d010a88178f65d"
           method="POST"
         >
-          <input type="text" name="name" placeholder="Nome" required />
-          <input type="email" name="email" placeholder="E-mail" required />
+          <input
+            type="text"
+            name="name"
+            data-i18n="[placeholder]contact.form.namePlaceholder"
+            data-i18n-required="contact.form.nameRequired"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            data-i18n="[placeholder]contact.form.emailPlaceholder"
+            data-i18n-required="contact.form.emailRequired"
+            placeholder="Email"
+            required
+          />
           <textarea
             name="message"
-            placeholder="Assunto"
+            data-i18n="[placeholder]contact.form.messagePlaceholder"
+            data-i18n-required="contact.form.messageRequired"
+            placeholder="Message"
             rows="4"
             required
           ></textarea>
 
+          <!-- Hidden fields for form submission behavior -->
           <input
             type="hidden"
             name="_next"
@@ -107,13 +163,16 @@
           <input
             type="hidden"
             name="_autoresponse"
-            value="Recebi sua mensagem e retornarei em breve!"
+            id="autoResponse"
+            data-i18n="[value]contact.form.autoResponse"
+            value="I received your message and will get back to you soon!"
           />
 
-          <button type="submit">Enviar</button>
+          <button type="submit" data-i18n="contact.form.submit">Send</button>
         </form>
 
-        <div class="redes-sociais">
+        <!-- Social media links -->
+        <div class="social-media">
           <a
             href="https://github.com/mateuzito"
             target="_blank"
@@ -136,12 +195,15 @@
       </section>
     </main>
 
+    <!-- Footer with copyright notice -->
     <footer class="footer">
-      <p>Mateus Silva - Todos os direitos reservados</p>
+      <p data-i18n="footer.rights">Mateus Silva - All rights reserved</p>
     </footer>
 
+    <!-- Success banner for form submission -->
     <div class="banner hidden" id="successBanner">
-      <i class="bx bx-check"></i> Formulário enviado com sucesso!
+      <i class="bx bx-check"></i>
+      <span data-i18n="contact.success">Form submitted successfully!</span>
     </div>
 
     <script src="script.js"></script>
