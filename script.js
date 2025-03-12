@@ -93,14 +93,22 @@ function updateTranslations() {
 }
 
 // Show success banner if URL parameter indicates form submission
-window.onload = function () {
+function checkUrlForSuccess() {
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.get("success") === "true") {
     const banner = document.getElementById("successBanner");
     banner.classList.remove("hidden");
+
     setTimeout(() => {
       banner.classList.add("hidden");
-    }, 3000); // Hide after 3 seconds
+      const url = new URL(window.location);
+      url.searchParams.delete("success");
+      window.history.replaceState({}, document.title, url);
+    }, 5000); // Hide after 5 seconds
   }
+
   updateTranslations(); // Ensure translations are applied after page load
-};
+}
+
+// Execute checkUrlForSuccess() when the page loads
+window.onload = checkUrlForSuccess;
