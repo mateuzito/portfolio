@@ -82,6 +82,13 @@ body {
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Grid animation */
+.project:hover {
+  transform: scale(1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Project image styling */
